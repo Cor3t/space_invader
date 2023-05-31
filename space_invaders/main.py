@@ -5,6 +5,7 @@ import random
 
 
 # dubem was just here 2023
+# dubem was here a second time
 pygame.font.init()
 
 pygame.init()
