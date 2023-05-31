@@ -3,6 +3,8 @@ import os
 import time
 import random
 
+
+# dubem was just here 2023
 pygame.font.init()
 
 pygame.init()
