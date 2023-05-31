@@ -2,7 +2,8 @@ import pygame
 import os
 import time
 import random
-
+#push from first
+# before you remote
 pygame.font.init()
 
 pygame.init()
