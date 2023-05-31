@@ -27,7 +27,7 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets", "laser_yellow.png"))
 BLUE_LASER = pygame.image.load(os.path.join("assets", "laser_blue.png"))
 
 # Background
-BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "space.jpg")), (WIDTH, HEIGHT))
+BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "image2.jpg")), (WIDTH, HEIGHT))
 
 class Laser:
     def __init__(self, x, y, img):
