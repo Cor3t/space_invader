@@ -6,8 +6,8 @@ import random
 pygame.font.init()
 
 pygame.init()
-WIDTH, HEIGHT = 750, 750
-WIN = pygame.display.set_mode((WIDTH, HEIGHT))
+WIDTH, HEIGHT = 700, 500
+WIN = pygame.display.set_mode((WIDTH, HEIGHT), pygame.RESIZABLE)
 pygame.display.set_caption("Space Shooter")
 
 # Load images
@@ -25,7 +25,7 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets", "laser_yellow.png"))
 BLUE_LASER = pygame.image.load(os.path.join("assets", "laser_blue.png"))
 
 # Background
-BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "space.jpg")), (WIDTH, HEIGHT))
+BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "dark-texture-watercolor.jpg")), (WIDTH, HEIGHT))
 
 class Laser:
     def __init__(self, x, y, img):
@@ -254,12 +254,12 @@ def main():
         player.move_lasers(-laser_vel, enemies)
 
 def main_menu():
-    title_font = pygame.font.SysFont("comicsans", 70)
+    title_font = pygame.font.SysFont("comicsans", 50)
     run = True
     while run:
         WIN.blit(BG, (0,0))
         title_label = title_font.render("Press the mouse to begin...", 1, (255,255,255))
-        WIN.blit(title_label, (WIDTH/2 - title_label.get_width()/2, 350))
+        WIN.blit(title_label, (WIDTH/2 - title_label.get_width()/2, 200))
         pygame.display.update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
